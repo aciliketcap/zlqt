@@ -1,0 +1,17 @@
+Hi, here is a new launcher for Zod Engine.
+
+It's still under construction, so it has a few obvious errors:
+
+	1) It works under Linux, but porting should not be a big problem. QT manages the file paths, so changing a few things in QProcess and saving scripts as .bat files in Windows will be enough. Unfortunately I don't have a Windows machine with an IDE around me right now.
+	2) The inputs in textboxes are not validated! Only resolution textboxes are set to accept 4 digit numbers and that's all. You can check out what it can cause by entering " -" in text boxes. No quotation marks or escape chars are defined. I know how messy cleaning bad or harmful input can get, I messed a lot with SQL injection strings etc. when I was doing web development. Validation is must for GUI programming but I don't think about adding any validation for this project. 
+	3) I don't know what tray (-a) and main server settings file (-e) options are. I just added them. I am also not sure if -k option gives a "better cursor". I guess I should have named it faster cursor. Can change if necessary.
+	4) Some options don't work together. I will apply the rules in Zod Engine's input_options::checkoptions() function defined in main.cpp. When an option that won't work with others are selected those options will be disabled and their commandline strings will be removed.
+	5) File selection dialogs don't have default selected files and they don't filter files by extension. I added the functionality but for some reason it doesn't work. I will fix it sometime, hopefully. Also they use absolute paths but I guess that's better.
+	6) I can't render the standard output correctly for some reason. Even if it shows reliable output it still waits till execution of the process is over. Also it's currently using 1024 char long lines to read output, should change that sometime. This is the first problem I'm looking forward to fix. Save button saves with an automatic date string as filename. Copying works under X11 but should make a few small changes for Windows.
+	7) I'm planning to add a button next to map list option. It will open a map file creation window and let you add and remove maps from map files without any text editing.
+	8) When launcher is run for the first time having some default options selected can be good. Saving last edited options can be better. Maybe even saving old server settings, so that you can choose any server you connected from a combobox.
+	
+Finally this software doesn't have a license right now, but know that it's given as is. Any problems related to this software is user's problem. But I guess you'll be safe as long as you don't save over important documents. 
+
+Have fun,
+Sinan 
