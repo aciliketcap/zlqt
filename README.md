@@ -20,9 +20,9 @@ And there are other things I'm looking forward to implement when I have the time
 
 6. I don't know what tray (-a) and main server settings file (-e) options are. I just added them. I am also not sure if -k option gives a "better cursor". I guess I should have named it faster cursor. Can change if necessary.
 
-The included binary dynamically links with Qt 4.8.2 and it is compiled using gcc 4.5.4 under 64-bit Gentoo Linux. Best is to recompile by typing make I think. I don't know how I can provide binaries for other operating systems since I don't have a working compiling environment other than Gentoo around me.
+The included binary dynamically links with Qt 4.8.2 and it is compiled using gcc 4.5.4 under 64-bit Gentoo Linux. Best is to recompile by typing "make" I think. I don't know how I can provide binaries for other operating systems since I don't have a working compiling environment other than Gentoo around me.
 
-Finally this distribution of code is licensed under GNU General Public License version 3 and it works on Qt library version 4.8.1 (and newer versions I hope) which is distributed under GNU Lesser General Public License version 2.1. You can download Qt libraries from website (http://qt.nokia.com/downloads).  
+Finally this distribution of code is licensed under GNU General Public License version 3 and it works on Qt library version 4.8.2 (and newer versions I hope) which is distributed under GNU Lesser General Public License version 2.1. You can download Qt libraries from website (http://qt.nokia.com/downloads).  
 
 zlqt is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of it in a file named LICENSE, if not see (http://www.gnu.org/licenses/).
 
